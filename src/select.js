@@ -637,10 +637,10 @@
 
       var key = e.which;
 
-      // if(~[KEY.ESC,KEY.TAB].indexOf(key)){
-      //   //TODO: SEGURO?
-      //   ctrl.close();
-      // }
+      if(~[KEY.ESC,KEY.TAB].indexOf(key)){
+        ctrl.close();
+        return;
+      }
 
       $scope.$apply(function() {
         var processed = false;
